@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>stuart morris</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <style>
+  
+  /* Add this inside your <style> tag */
+
+@media (max-width: 768px) {
+  .neon-text {
+    font-size: 36px;
+    top: 20px;
+    padding: 0 10px;
+  }
+
+  .info-panel {
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .info-panel h2 {
+    font-size: 18px;
+  }
+
+  .info-panel p {
+    font-size: 13px;
+  }
+
+  .building {
+    width: 30px;
+  }
+
+  .buildings {
+    height: 35%;
+    gap: 5px;
+  }
+
+  .stream {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .neon-text {
+    font-size: 28px;
+  }
+
+  .info-panel {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .info-panel h2 {
+    font-size: 16px;
+  }
+
+  .building {
+    width: 20px;
+  }
+
+  .stream {
+    font-size: 10px;
+  }
+}
+
+/* Optional: allow vertical scrolling on small screens */
+body {
+  overflow: auto;
+}
+
+  
     body {
       margin: 0;
       background: linear-gradient(to top, #000000, #1a1a2e);
@@ -106,8 +176,8 @@
 
     .info-panel {
       position: absolute;
-      bottom: 20px;
-      left: 20px;
+      top: 150px;
+      left: 220px;
       background: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border: 2px solid #ff00cc;
